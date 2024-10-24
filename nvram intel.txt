@@ -1,0 +1,138 @@
+// Script File Name : nvram.txt
+// Created on 06/26/24 at 10:35:10    
+// AMISCE Utility. Ver 5.05.01.0002
+// Copyright (c) 2021 AMI. All rights reserved.
+HIICrc32= AF3B3B67
+
+Setup Question	= BCLK Output Source
+Help String	= 
+Token	=14	// Do NOT change this line
+Offset	=CAC
+Width	=01
+BIOS Default	=[00]CPU BCLK 
+Options	=*[00]CPU BCLK	// Move "*" to the desired Option
+         [02]Buffer
+
+Setup Question	= SelfRefresh Enable
+Help String	= Enable, Disable(Enable= Def)
+Token	=933	// Do NOT change this line
+Offset	=223
+Width	=01
+BIOS Default	=[01]Enabled 
+Options	=*[00]Disabled	// Move "*" to the desired Option
+         [01]Enabled
+
+Setup Question	= Hyper-Threading Technology
+Help String	= Enable or disable Intel Hyper-Threading technology. Disabling may affect CPU performance in multi-threaded applications.
+Token	=78	// Do NOT change this line
+Offset	=D2C
+Width	=01
+BIOS Default	=[00]Auto 
+Options	=[00]Auto	// Move "*" to the desired Option
+         *[01]Disabled
+         [02]Enabled
+
+Setup Question	= Hyper-Threading
+Help String	= Enable or Disable Hyper-Threading Technology.
+Token	=2724	// Do NOT change this line
+Offset	=05
+Width	=01
+BIOS Default	=[01]Enabled 
+Options	=*[00]Disabled	// Move "*" to the desired Option
+         [01]Enabled
+
+Setup Question	= C-States Control
+Help String	= C-States Control
+Token	=7A	// Do NOT change this line
+Offset	=D2D
+Width	=01
+BIOS Default	=[00]Auto 
+Options	=[00]Auto	// Move "*" to the desired Option
+         *[01]Disabled
+         [02]Enabled
+
+Setup Question	= Intel(R) Speed Shift Technology Interrupt Control
+Help String	= Enable/Disable Intel(R) Speed Shift Technology Interrupts
+Token	=3EC	// Do NOT change this line
+Offset	=20C
+Width	=01
+BIOS Default	=[01]Enabled 
+Options	=*[00]Disabled	// Move "*" to the desired Option
+         [01]Enabled
+
+Setup Question	= Intel(R) Speed Shift Technology
+Help String	= Enable/Disable Intel(R) Speed Shift Technology support. Enabling will expose the CPPC v2 interface to allow for hardware controlled P-states.
+Token	=272A	// Do NOT change this line
+Offset	=0B
+Width	=01
+BIOS Default	=[01]Enabled 
+Options	=*[00]Disabled	// Move "*" to the desired Option
+         [01]Enabled
+
+Setup Question	= Intel(R) Speed Shift Technology
+Help String	= Enable/Disable Intel(R) Speed Shift Technology support. Enabling will expose the CPPC v2 interface to allow for hardware controlled P-states.
+Token	=79	// Do NOT change this line
+Offset	=D37
+Width	=01
+BIOS Default	=[02]Enabled 
+Options	=[00]Auto	// Move "*" to the desired Option
+         *[01]Disabled
+         [02]Enabled
+
+Setup Question	= PCI-X Latency Timer
+Help String	= Value to be programmed into PCI Latency Timer Register.
+Token	=734	// Do NOT change this line
+Offset	=114B
+Width	=01
+BIOS Default	=[40]64 PCI Bus Clocks 
+Options	=[20]32 PCI Bus Clocks	// Move "*" to the desired Option
+         *[40]64 PCI Bus Clocks
+         [60]96 PCI Bus Clocks
+         [80]128 PCI Bus Clocks
+         [A0]160 PCI Bus Clocks
+         [C0]192 PCI Bus Clocks
+         [E0]224 PCI Bus Clocks
+         [F8]248 PCI Bus Clocks
+
+Setup Question	= EC Low Power Mode
+Help String	= This option controls whether EC will go to Low power mode during Low Power S0 Idle State
+Token	=244	// Do NOT change this line
+Offset	=78
+Width	=01
+BIOS Default	=[01]Enabled 
+Options	=*[00]Disabled	// Move "*" to the desired Option
+         [01]Enabled
+
+Setup Question	= LPMode
+Help String	= Control LPMode feature
+Token	=857	// Do NOT change this line
+Offset	=42F
+Width	=01
+BIOS Default	=[00]Auto 
+Options	=[00]Auto	// Move "*" to the desired Option
+         [01]Enabled
+         *[02]Disabled
+
+
+Setup Question	= RC6(Render Standby)
+Help String	= Check to enable render standby support.
+Token	=8E9	// Do NOT change this line
+Offset	=2E
+Width	=01
+BIOS Default	=[01]Enabled 
+Options	=*[00]Disabled	// Move "*" to the desired Option
+         [01]Enabled
+
+
+Setup Question	= Energy Efficient P-state
+Help String	= Enable/Disable Energy Efficient P-state feature. When set to 0, will disable access to ENERGY_PERFORMANCE_BIAS MSR and CPUID Function 6 ECX[3] will read 0 indicating no support for Energy Efficient policy setting. When set to 1 will enable access to ENERGY_PERFORMANCE_BIAS MSR 1B0h and CPUID Function 6 ECX[3] will read 1 indicating Energy Efficient policy setting is supported.
+Token	=45C	// Do NOT change this line
+Offset	=3C
+Width	=01
+BIOS Default	=[01]Enabled 
+Options	=*[00]Disabled	// Move "*" to the desired Option
+         [01]Enabled
+
+
+
+
